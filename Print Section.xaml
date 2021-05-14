@@ -83,7 +83,7 @@
           <av:Size x:Key="ShapeSize">200,112.8</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Wait for Progress before we type the file name." DisplayName="SaveAsloop" sap:VirtualizedContainerService.HintSize="792,3160" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence sap2010:Annotation.AnnotationText="Wait for Progress before we type the file name." DisplayName="SaveAsloop" sap:VirtualizedContainerService.HintSize="792,3262.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <Sequence.Variables>
           <Variable x:TypeArguments="ui:GenericValue" Name="break_while" />
         </Sequence.Variables>
@@ -216,7 +216,7 @@
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[&quot;Save as break loop - &quot; + break_while]" />
           </Sequence>
         </While>
-        <While DisplayName="While SaveAs " sap:VirtualizedContainerService.HintSize="750.4,1672.8" sap2010:WorkflowViewState.IdRef="While_1">
+        <While DisplayName="While SaveAs " sap:VirtualizedContainerService.HintSize="750.4,1775.2" sap2010:WorkflowViewState.IdRef="While_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -226,7 +226,7 @@
           <While.Condition>
             <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="bSavePrint" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
           </While.Condition>
-          <Sequence sap:VirtualizedContainerService.HintSize="705.6,1513.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap:VirtualizedContainerService.HintSize="705.6,1616" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -245,9 +245,9 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:UiElementExists>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="664,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;bSavePrint: &quot; + bSavePrint.ToString]" />
-            <If Condition="[bSavePrint]" sap:VirtualizedContainerService.HintSize="664,1171.2" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[bSavePrint]" sap:VirtualizedContainerService.HintSize="664,1273.6" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="520,1021.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence sap:VirtualizedContainerService.HintSize="520,1124" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -264,7 +264,7 @@
                   </Assign>
                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;strFileName: &quot; + strFileName.ToString]" />
                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="Inside If" />
-                  <Sequence DisplayName="File Name Save Dialog" sap:VirtualizedContainerService.HintSize="478.4,624" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="File Name Save Dialog" sap:VirtualizedContainerService.HintSize="478.4,726.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -305,6 +305,7 @@
                       </TryCatch.Catches>
                     </TryCatch>
                     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="436.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="Saved the file" />
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="436.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="gittest" />
                   </Sequence>
                 </Sequence>
               </If.Then>
